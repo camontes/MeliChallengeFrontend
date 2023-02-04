@@ -1,0 +1,14 @@
+@mixin styleInput{
+
+        outline:none !important;
+    
+        outline-width: 0 !important;
+    
+        box-shadow: none;
+    
+        -moz-box-shadow: none;
+    
+        -webkit-box-shadow: none;
+        border-color: white;
+        border-radius: 0px;
+}

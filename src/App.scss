@@ -1,1 +1,43 @@
 @import './scss/variable.scss';
+@import './scss/mixins.scss';
+
+.header{
+    background-color: $bgcolorHeader;
+    padding-top: $paddingTopHeader;
+
+    .logoContainer{
+        text-align: center;
+    }
+
+    input:focus, input.form-control:focus {
+
+        @include styleInput;
+    
+    }
+
+    input{
+        @include styleInput;
+    }
+    .input-group-text{
+        border: 0px;
+        border-radius: 0px;
+        cursor: pointer;
+    }
+}
+
+body{
+    padding: margin;
+    margin: margin;
+    background-color: $backGroundColorBody;
+}
+
+
+//MEDIA QUERIES
+@media only screen and (max-width: 700px) {
+    input.form-control {
+      margin-left: $marginLeftInputMedia;
+    }
+    .logo{
+        margin-left: $marginLeftLogoMedia;
+    }
+}

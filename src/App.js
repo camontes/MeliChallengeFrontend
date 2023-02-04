@@ -1,9 +1,10 @@
+import SideBarPage from "./pages/SideBarPage";
 
 function App() {
   return (
-    <div className="App">
-      App
-    </div>
+    <>
+      <SideBarPage />
+    </>
   );
 }
 
