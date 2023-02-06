@@ -5,6 +5,7 @@ const SearchBar = ({iconSearch, alt, onHandleClick,placeholder}) => {
 
     const handleClick = (event) => {
         event.preventDefault();
+        setTerm('');
         onHandleClick(term);
     }
     return(

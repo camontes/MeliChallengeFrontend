@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Logo from "../components/Logo";
 import SearchBar from "../components/SearchBar";
 import logo from '../img/Logo_ML.png'
@@ -9,9 +10,10 @@ const SideBarContainer = () =>{
     const altIconSearch = "Busqueda";
     const placeholder = "Nunca dejes de buscar";
 
+    const navigate = useNavigate();
 
     const onSendTerm = (term) =>{
-        console.log(term);
+        navigate(`/items?search=${term}`);
     }
 
     return(

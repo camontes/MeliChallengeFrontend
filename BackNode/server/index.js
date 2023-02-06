@@ -45,8 +45,7 @@ app.get('/', (req, res) => {
   let productsFilter = products.data.results.slice(0,4).map((p)=>{
     return {
       author:{
-        name: p.seller.nickname,
-        lastname: p.seller_address.state.name
+        name: p.seller.nickname
       },
       id:p.id,
       title: p.title,
