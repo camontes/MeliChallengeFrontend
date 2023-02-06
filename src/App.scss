@@ -5,9 +5,9 @@
     background-color: $bgcolorHeader;
     padding-top: $paddingTopHeader;
 
-    .logoContainer{
+    /*.logoContainer{
         text-align: center;
-    }
+    }*/
 
     input:focus, input.form-control:focus {
 
@@ -39,5 +39,16 @@ body{
     }
     .logo{
         margin-left: $marginLeftLogoMedia;
+    }
+}
+
+
+.containerCategories{
+
+    p{
+        font-size: $fontSizeCategory;
+        color: $colorCategory;
+        margin-bottom: $marginCategory;
+        margin-top: $marginCategory;
     }
 }

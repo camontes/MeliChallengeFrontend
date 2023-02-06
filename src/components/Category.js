@@ -1,8 +1,9 @@
 
-const Category = () =>{
+const Category = ({categories}) =>{
 
+    const renderedContent = categories.join(" > ");
     return(
-        <div>Category</div>
+        <p>{renderedContent}</p>
     );
 }
 

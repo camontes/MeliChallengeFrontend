@@ -2,7 +2,7 @@
 const Error = () =>{
     return (
         <div className="alert alert-seconda d-flex justiy-content-center" role="alert">
-            Somethion went wrong
+            Hubo un error en la aplicación, por favor intenta más tarde
         </div>
     );
 }

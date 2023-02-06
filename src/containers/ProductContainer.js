@@ -25,7 +25,7 @@ const ProductContainer = ({search}) => {
             }
         }
         getData();
-    },[search,navigate]);
+    },[search, navigate]);
 
     const renderedContent = () =>{
 
@@ -33,12 +33,16 @@ const ProductContainer = ({search}) => {
             return <Spinner/>   
         }
         else if(products.items.length === 0){
-            return <NoContent data = "There are no results to show"/>
+            return (
+                <NoContent data = "No hay resultados para mostrar"/>
+            )
         }
-        return <Categories/>;
+        return (
+            <div className="row">
+                <Categories categories = {products.categories}/>
+            </div>
+        );
     }
-
-    console.log(products);
     return (
         renderedContent()
     );
