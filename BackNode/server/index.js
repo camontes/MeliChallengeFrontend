@@ -16,6 +16,8 @@ app.get('/', (req, res) => {
 
  app.get('/api/items', async  function(req, res){
 
+  res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+
   const category = "category";
   let products = await axios.get(`https://api.mercadolibre.com/sites/MLA/search?q=${req.query.q}`);
   let decimals = 0;
