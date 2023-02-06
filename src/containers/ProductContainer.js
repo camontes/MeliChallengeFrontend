@@ -1,7 +1,8 @@
 import Categories from "../components/Categories";
 
-const ProductContainer = () => {
+const ProductContainer = ({search}) => {
 
+    console.log(search);
     return (
         <Categories/>
     );
