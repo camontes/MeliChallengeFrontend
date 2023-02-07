@@ -4,6 +4,8 @@ import meli from '../api/meli.js'
 import Categories from "../components/Categories";
 import Spinner from "../components/Spinner.js";
 import NoContent from "../components/NoContent.js";
+import Products from "../components/Products"
+import shipping from '../img/ic_shipping.png';
 
 const ProductContainer = ({search}) => {
     const[products, setProducts] = useState(null);
@@ -38,9 +40,14 @@ const ProductContainer = ({search}) => {
             )
         }
         return (
-            <div className="row">
-                <Categories categories = {products.categories}/>
-            </div>
+            <>
+                <div className="row">
+                    <Categories categories = {products.categories}/>
+                </div>
+                <>
+                    <Products products = {products.items} shipping = {shipping}/>
+                </>
+            </>
         );
     }
     return (

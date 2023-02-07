@@ -29,6 +29,7 @@ body{
     padding: margin;
     margin: margin;
     background-color: $backGroundColorBody;
+    overflow-x: hidden;
 }
 
 
@@ -40,8 +41,22 @@ body{
     .logo{
         margin-left: $marginLeftLogoMedia;
     }
+    .colContent{
+        border-bottom: 0px !important;
+    }
+    .product{
+        border-bottom: $borderBottom;
+    }
+    .containerCategories{
+        text-align: center;
+    }
 }
+@media only screen and (max-width: 600px) {
 
+    .colContent{
+        text-align: center;
+    }
+}
 
 .containerCategories{
 
@@ -50,5 +65,42 @@ body{
         color: $colorCategory;
         margin-bottom: $marginCategory;
         margin-top: $marginCategory;
+    }
+}
+
+.product{
+
+    .price{
+        font-size: $fontSizePrice;
+        color: $colorPrice;
+    }
+
+    .title{
+        font-size: $fontSizeTitle;
+        color: $colorTitle;
+        padding-top: $marginRed;
+    }
+
+    .miniImgProduct{
+        width: $sizeImgMin;
+        height: $sizeImgMin;
+        border-radius: $borderRadiusImgMini;
+        padding-left: $marginRed;
+    }
+    .colContent{
+        background-color: $colorCols;
+        padding-top: $marginRed;
+        padding-left: 0px;
+        padding-bottom: $marginRed;
+        border-bottom: $borderBottom;
+    }
+    .priceInfo{
+        padding-left: $marginRed;
+    }
+
+    .author{
+        font-size: $fontSizeAuthor;
+        color: $colorAuthor;
+        text-align: center;
     }
 }
