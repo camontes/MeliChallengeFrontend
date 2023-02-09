@@ -11,7 +11,7 @@ const ProductDetail = ({productDetail}) =>{
                 </div>
                 <div className="col-lg-3 col-md-3 col-xs-12 col-sm-12 colsDetail">
                     <p className="newDetail">
-                        {productDetail.condition} - {productDetail.sold_quantity}
+                        {productDetail.condition} - {productDetail.sold_quantity} sold
                     </p>
                     <p className="titleDetail">
                         {productDetail.item.title}
