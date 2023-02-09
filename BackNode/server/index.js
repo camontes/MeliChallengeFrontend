@@ -5,11 +5,6 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-app.get('/', (req, res) => {
-  console.log('')
-    res.json({ message: "Hola desde el servidor node"});
-  });
-
   async function getCategories (categoryId){
     let categories = await axios.get(`https://api.mercadolibre.com/categories/${categoryId}`);
     
@@ -187,7 +182,6 @@ app.get('/', (req, res) => {
     decimals = currencies.decimal_places;
     currency = currencies.symbol;
 
-    //get categories
     categories = await getCategories(categoryId);
 
     data = setProducts(products,currency,decimals,categories);
@@ -198,5 +192,5 @@ app.get('/', (req, res) => {
 });
   
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto: ${PORT}`);
+    console.log(`Listening port: ${PORT}`);
   });

@@ -1,7 +1,12 @@
+import { setFormat } from "../Util/format";
 
 const Product = ({product, shipping,onHandleClick}) => {
 
     const {id} = product;
+
+    const setAmount = (amount) => {
+        return setFormat(amount);
+    }
 
     return (
         <>
@@ -11,7 +16,7 @@ const Product = ({product, shipping,onHandleClick}) => {
             <div className="col-lg-4 col-md-3 col-xs-4 col-sm-4 colContent priceInfo" onClick={() => onHandleClick(id)}>
                 <div className="d-inline-flex">
                     <p className="price">
-                        {product.price.currency} {new Intl.NumberFormat('de-DE').format(product.price.amount)}
+                        {product.price.currency} {setAmount(product.price.amount)}
                         &nbsp;&nbsp;
                         {product.free_shipping && (<img src={shipping} alt={product.title}/>)}
                     </p>

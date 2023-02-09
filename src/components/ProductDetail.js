@@ -1,6 +1,11 @@
 import DescriptionProduct from "./DescriptionProduct";
+import { setFormat } from "../Util/format";
 
 const ProductDetail = ({productDetail}) =>{
+
+    const setAmount = (amount) => {
+        return setFormat(amount);
+    }
 
     return (
         <>
@@ -16,7 +21,7 @@ const ProductDetail = ({productDetail}) =>{
                         {productDetail.item.title}
                     </p>
                     <p className="priceDetail">
-                        {productDetail.item.price.currency} {new Intl.NumberFormat('de-DE').format(productDetail.item.price.amount)}
+                        {productDetail.item.price.currency} {setAmount(productDetail.item.price.amount)}
                     </p>
                     <button className="btn btn-primary btnComprar">Comprar</button>
                 </div>
