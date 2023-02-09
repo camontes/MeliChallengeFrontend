@@ -2,7 +2,6 @@ import DescriptionProduct from "./DescriptionProduct";
 
 const ProductDetail = ({productDetail}) =>{
 
-    console.log(productDetail);
     return (
         <>
             <div className="row justify-content-center containerDetail">
