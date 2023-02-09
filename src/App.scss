@@ -9,6 +9,10 @@
         text-align: center;
     }*/
 
+    .logo{
+        cursor: pointer;
+    }
+
     input:focus, input.form-control:focus {
 
         @include styleInput;
@@ -73,12 +77,13 @@ body{
     .price{
         font-size: $fontSizePrice;
         color: $colorPrice;
+        margin-bottom: 0px;
     }
 
     .title{
         font-size: $fontSizeTitle;
         color: $colorTitle;
-        padding-top: $marginRed;
+        padding-top: $marginGreen;
     }
 
     .miniImgProduct{
@@ -93,6 +98,9 @@ body{
         padding-left: 0px;
         padding-bottom: $marginRed;
         border-bottom: $borderBottom;
+    }
+    .contentFirst{
+        padding-right: 0px;
     }
     .priceInfo{
         padding-left: $marginRed;

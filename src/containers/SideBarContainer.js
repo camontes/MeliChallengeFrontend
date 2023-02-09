@@ -16,10 +16,14 @@ const SideBarContainer = () =>{
         navigate(`/items?search=${term}`);
     }
 
+    const handleClick = () =>{
+        navigate('/');
+    }
+
     return(
         <div className="row justify-content-center">
             <div className="col-1 logoContainer">
-                <Logo logo={logo} alt = {altImgLogo}/>
+                <Logo logo={logo} alt = {altImgLogo} onClick = {handleClick}/>
             </div>
             <div className="col-9">
                 <SearchBar 

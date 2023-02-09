@@ -3,7 +3,7 @@ const Product = ({product, shipping}) => {
 
     return (
         <>
-            <div className="col-lg-2 col-md-3 col-xs-4 col-sm-4 colContent">
+            <div className="col-lg-2 col-md-3 col-xs-4 col-sm-4 colContent contentFirst">
                 <img className="miniImgProduct" src={product.picture} alt={product.title}/>
             </div>
             <div className="col-lg-4 col-md-3 col-xs-4 col-sm-4 colContent priceInfo">
