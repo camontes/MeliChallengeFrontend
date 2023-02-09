@@ -1,12 +1,14 @@
 
-const Product = ({product, shipping}) => {
+const Product = ({product, shipping,onHandleClick}) => {
+
+    const {id} = product;
 
     return (
         <>
-            <div className="col-lg-2 col-md-3 col-xs-4 col-sm-4 colContent contentFirst">
-                <img className="miniImgProduct" src={product.picture} alt={product.title}/>
+            <div className="col-lg-2 col-md-3 col-xs-4 col-sm-4 colContent contentFirst" onClick={() => onHandleClick(id)}>
+                <img className="miniImgProduct img-fluid" src={product.picture} alt={product.title}/>
             </div>
-            <div className="col-lg-4 col-md-3 col-xs-4 col-sm-4 colContent priceInfo">
+            <div className="col-lg-4 col-md-3 col-xs-4 col-sm-4 colContent priceInfo" onClick={() => onHandleClick(id)}>
                 <div className="d-inline-flex">
                     <p className="price">
                         {product.price.currency} {new Intl.NumberFormat('de-DE').format(product.price.amount)}

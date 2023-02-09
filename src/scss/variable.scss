@@ -38,8 +38,22 @@ $colorCols: white;
 //GLOBALs
 $marginRed: 16px;
 $marginGreen: 32px;
-$borderBottom: 2px solid #EEEEEE;
+$borderBottom: 1px solid #EEEEEE;
+$colorDarK: #333333;
+$colorButtonBlue: #3483FA;
 
 //Class author
 $fontSizeAuthor: 12px;
-$colorAuthor: #999999
+$colorAuthor: #999999;
+
+//ProductDetail
+$widthImgDetail: 680px;
+$heighImgDetail: 650px;
+$sizeButtonDetail: 100%;
+$fontSizeTitleDetail: 24px;
+$fontSizePriceDetail: 46px;
+$fontSizeNewDetail: 14px;
+
+//ProductDetailResponsive
+$sizeImgHugeResponsive: 400px !important;
+$marginBootomBtnC: 32px !important;

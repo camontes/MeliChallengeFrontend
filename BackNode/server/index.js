@@ -104,6 +104,8 @@ app.get('/', (req, res) => {
 
   app.get('/api/items/:id', async(req, res) => {
 
+    res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+
     const {id} = req.params;
 
     let data = {item:{}};
@@ -151,7 +153,7 @@ app.get('/', (req, res) => {
       categories = await getCategories(category_id);
 
       condition = productDetail.data.condition;
-      free_shipping = productDetail.data.free_shipping;
+      free_shipping = productDetail.data.shipping.free_shipping;
       sold_quantity = productDetail.data.sold_quantity;
 
       data = setProductDetail(productDetail.data,symbol,decimal_places,authorName,categories,picture,condition,free_shipping,sold_quantity,description,);

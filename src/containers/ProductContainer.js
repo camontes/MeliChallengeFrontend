@@ -13,6 +13,9 @@ const ProductContainer = ({search}) => {
 
     const navigate = useNavigate();
 
+    const handleClickProductDetail = (id) => {
+        navigate(`/items/${id}`)
+    }
     useEffect(()=>{
         const getData = async () =>{
             setIsloading(true);
@@ -45,7 +48,7 @@ const ProductContainer = ({search}) => {
                     <Categories categories = {products.categories}/>
                 </div>
                 <>
-                    <Products products = {products.items} shipping = {shipping}/>
+                    <Products products = {products.items} shipping = {shipping} onHandleClick={handleClickProductDetail}/>
                 </>
             </>
         );
