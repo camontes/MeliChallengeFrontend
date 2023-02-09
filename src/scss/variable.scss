@@ -37,10 +37,11 @@ $colorCols: white;
 
 //GLOBALs
 $marginRed: 16px;
-$marginGreen: 32px;
+$marginGreen: 32px !important;
 $borderBottom: 1px solid #EEEEEE;
 $colorDarK: #333333;
 $colorButtonBlue: #3483FA;
+$colorLite: #EEEEEE;
 
 //Class author
 $fontSizeAuthor: 12px;
@@ -57,3 +58,4 @@ $fontSizeNewDetail: 14px;
 //ProductDetailResponsive
 $sizeImgHugeResponsive: 400px !important;
 $marginBootomBtnC: 32px !important;
+$fontSizeTitleDescription: 28px;

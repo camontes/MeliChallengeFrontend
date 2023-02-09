@@ -64,6 +64,9 @@ body{
 
 @media only screen and (max-width: 770px) {
 
+    .productDescription{
+        padding-right: $marginGreen;
+    }
     .colsDetail{
         text-align: center;
         .imgDetailHuge{
@@ -163,5 +166,22 @@ body{
             color:$colorDarK;
             margin-bottom: $marginGreen;
         }
+    }
+}
+
+.productDescription{
+    background-color: $colorCols;
+    padding-left: $marginGreen;
+
+    .titleDescription{
+        font-size: $fontSizeTitleDescription;
+        color: $colorDarK;
+        margin-bottom: $marginGreen;
+    }
+    .descriptionText{
+        font-size: $fontSizeAuthor;
+        color: colorLite;
+        text-align: justify;
+        margin-bottom: $marginGreen;
     }
 }
