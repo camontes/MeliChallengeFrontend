@@ -112,7 +112,6 @@ app.get('/', (req, res) => {
     let symbol = "";
     let decimal_places = 0;
     let picture = "";
-    let item = {};
     let description = "";
     let condition = "";
     let free_shipping = false;
