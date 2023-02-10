@@ -129,12 +129,14 @@ body{
     }
     .priceInfo{
         padding-left: $marginRed;
+        padding-top: $marginGreen;
     }
 
     .author{
         font-size: $fontSizeAuthor;
         color: $colorAuthor;
         text-align: center;
+        padding-top: $marginGreen;
     }
 
     .contentFirst, .priceInfo{
@@ -155,6 +157,7 @@ body{
         img{
             width: $widthImgDetail;
             height: $heighImgDetail;
+            padding-top: $marginGreen;
         }
 
         button{
