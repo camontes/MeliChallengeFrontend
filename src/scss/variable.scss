@@ -2,10 +2,21 @@
 $margin: 0px;
 $backGroundColorBody: #EEEEEE !important;
 
+//GLOBALs
+$marginRed: 16px;
+$marginGreen: 32px !important;
+$borderBottom: 1px solid #EEEEEE;
+$colorDarK: #333333;
+$colorButtonBlue: #3483FA;
+$colorLite: #EEEEEE;
+$fontWeight: bold;
+
 
 //HEADER
 $bgcolorHeader: #FFE600;
 $paddingTopHeader: 13px;
+$fontSizeInput: 18px !important;
+$paddingTopLogoMeli: 3px !important;
 
 //Input search bar
 $marginLeftInputMedia: 25px;
@@ -34,14 +45,7 @@ $borderRadiusImgMini: 4px;
 
 //container list product
 $colorCols: white;
-
-//GLOBALs
-$marginRed: 16px;
-$marginGreen: 32px !important;
-$borderBottom: 1px solid #EEEEEE;
-$colorDarK: #333333;
-$colorButtonBlue: #3483FA;
-$colorLite: #EEEEEE;
+$marginShipping: 5px !important;
 
 //Class author
 $fontSizeAuthor: 12px;

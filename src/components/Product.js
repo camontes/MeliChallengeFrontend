@@ -18,7 +18,7 @@ const Product = ({product, shipping,onHandleClick}) => {
                     <p className="price">
                         {product.price.currency} {setAmount(product.price.amount)}
                         &nbsp;&nbsp;
-                        {product.free_shipping && (<img src={shipping} alt={product.title}/>)}
+                        {product.free_shipping && (<img className="shipping" src={shipping} alt={product.title}/>)}
                     </p>
                     
                 </div>
