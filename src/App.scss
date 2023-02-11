@@ -182,6 +182,7 @@ body{
             color:$colorDarK;
             margin-bottom: $marginGreen;
             font-weight: $fontWeight;
+            word-wrap: break-word;
         }
     }
 }
@@ -201,5 +202,6 @@ body{
         color: $colorTitle;
         text-align: justify;
         margin-bottom: $marginGreen;
+        word-wrap: break-word;
     }
 }
