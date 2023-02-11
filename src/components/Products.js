@@ -2,7 +2,6 @@ import Product from "./Product";
 
 const Products = ({products, shipping,onHandleClick}) =>{
 
-    console.log(products);
 
     const renderedContent = products.map((p)  => {
         return (
