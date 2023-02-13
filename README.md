@@ -31,3 +31,5 @@ cd BackNode
 npm install
 
 npm run dev
+
+The api will run in the port 3001 (http://localhost:3001/)
